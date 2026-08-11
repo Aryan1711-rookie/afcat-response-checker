@@ -1,0 +1,13 @@
+
+{
+  "name": "afcat-response-grader",
+  "version": "1.0.0",
+  "description": "AFCAT response sheet score calculator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

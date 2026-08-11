@@ -1,0 +1,2569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AFCAT Response Grader",
+    "alternateName": "AFCAT 2 2026 Score Calculator",
+    "url": "https://YOUR-DOMAIN.com/"
+}
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFCAT 2 2026 Response Sheet & Score Calculator</title>
+
+<meta
+    name="description"
+    content="Calculate your AFCAT 2 2026 score instantly from your Digialm response sheet. Get correct, wrong, unanswered questions, candidate details, score and accuracy."
+>
+
+<meta
+    name="keywords"
+    content="AFCAT 2 2026, AFCAT 2026, AFCAT response sheet, AFCAT score calculator, AFCAT answer key, AFCAT result, AFCAT marks calculator, Digialm response sheet"
+>
+
+<meta name="author" content="Red Pen">
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<meta
+    name="googlebot"
+    content="index, follow"
+>
+
+<meta name="theme-color" content="#c0392b">
+
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<!-- Open Graph -->
+
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:title"
+    content="AFCAT 2 2026 Response Sheet & Score Calculator"
+>
+
+<meta
+    property="og:description"
+    content="Calculate your AFCAT 2 2026 score from your Digialm response sheet. See your score, accuracy, correct, wrong and unanswered questions."
+>
+
+<meta
+    property="og:url"
+    content="https://YOUR-DOMAIN.com/"
+>
+
+<meta
+    property="og:image"
+    content="https://YOUR-DOMAIN.com/og-image.png"
+>
+
+<meta
+    property="og:site_name"
+    content="Red Pen"
+>
+
+
+<!-- Twitter / X -->
+
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
+
+<meta
+    name="twitter:title"
+    content="AFCAT 2 2026 Response Sheet & Score Calculator"
+>
+
+<meta
+    name="twitter:description"
+    content="Calculate your AFCAT 2 2026 score instantly from your Digialm response sheet."
+>
+
+<meta
+    name="twitter:image"
+    content="https://YOUR-DOMAIN.com/og-image.png"
+>
+
+<style>
+:root {
+    --paper: #fbf8f1;
+    --ink: #24211e;
+    --ink-soft: #5a564f;
+    --red: #c0392b;
+    --green: #2f6b4f;
+    --green-light: #eaf4ed;
+    --red-light: #fcecea;
+    --yellow: #b7791f;
+    --yellow-light: #fff6df;
+    --rule: #c9cdd6;
+    --rule-strong: #8592a6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Arial, sans-serif;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 37px,
+        rgba(201,205,214,.55) 38px
+    );
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 28px 40px;
+    position: relative;
+}
+
+.wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 72px;
+    width: 2px;
+    background: rgba(192,57,43,.22);
+    pointer-events: none;
+}
+
+.content { margin-left: 62px; }
+
+header { margin-bottom: 34px; }
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 58px);
+    line-height: 1;
+    /* margin: 0 0 12px; */
+    margin-top: 15px;
+}
+
+h1 .stamp {
+    color: var(--red);
+    display: inline-block;
+    transform: rotate(-3deg);
+}
+
+.sub {
+    font-size: 16px;
+    color: var(--ink-soft);
+    max-width: 65ch;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.card {
+    background: rgba(255,255,255,.96);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 24px 26px 26px;
+    margin-bottom: 22px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.02);
+}
+
+.section-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: 0 0 5px;
+}
+
+.hint {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+    line-height: 1.5;
+}
+
+.url-row {
+    display: flex;
+    gap: 9px;
+}
+
+.url-input {
+    flex: 1;
+    min-width: 0;
+    height: 46px;
+    border: 1px solid var(--rule-strong);
+    border-radius: 2px;
+    background: #fffdf9;
+    color: var(--ink);
+    padding: 0 13px;
+    font: 13px monospace;
+    outline: none;
+}
+
+.url-input:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 2px rgba(192,57,43,.08);
+}
+
+button {
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.primary {
+    border: 0;
+    border-radius: 2px;
+    background: var(--red);
+    color: #fff;
+    font-weight: 600;
+    padding: 0 19px;
+    min-height: 46px;
+}
+
+.primary:hover { background: #a5301f; }
+
+.primary:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+.secondary {
+    border: 1px solid var(--rule-strong);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--ink-soft);
+    padding: 10px 14px;
+    font: 12px monospace;
+}
+
+.secondary:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+.file-row {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    border: 1px dashed var(--rule-strong);
+    padding: 10px 13px;
+    color: var(--ink-soft);
+    background: #fffdf9;
+    font: 12px monospace;
+}
+
+.file-label:hover {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.file-label input { display: none; }
+
+.file-name {
+    color: var(--ink-soft);
+    font: 12px monospace;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.status {
+    min-height: 18px;
+    margin-top: 12px;
+    font: 12px monospace;
+    line-height: 1.5;
+}
+
+.status.success { color: var(--green); }
+.status.error { color: var(--red); }
+.status.loading { color: var(--yellow); }
+
+.candidate-card {
+    border: 1px solid var(--rule);
+    background: #fffdf9;
+    margin-bottom: 24px;
+}
+
+.candidate-heading {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--rule);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--ink-soft);
+}
+
+.candidate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.candidate-item {
+    padding: 13px 14px;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    min-width: 0;
+}
+
+.candidate-item:nth-child(3n) {
+    border-right: none;
+}
+
+.candidate-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--ink-soft);
+    margin-bottom: 5px;
+}
+
+.candidate-value {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.results-head {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.score-circle {
+    width: 132px;
+    height: 132px;
+    flex: 0 0 132px;
+    border-radius: 50%;
+    border: 4px solid var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(-4deg);
+    color: var(--red);
+}
+
+.score-percent {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.score-fraction {
+    font-size: 14px;
+    margin-top: 5px;
+  
+}
+
+.score-meta {
+    font: 700 15px monospace;
+    color: var(--ink-soft);
+    line-height: 1.85;
+}
+
+.score-meta strong { color: var(--ink); }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+    margin-bottom: 22px;
+}
+
+.stat {
+    border: 1px solid var(--rule);
+    padding: 14px;
+    background: #fffdf9;
+}
+
+.stat-number {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font: 14px monospace;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.stat.correct .stat-number { color: var(--green); }
+.stat.wrong .stat-number { color: var(--red); }
+.stat.unanswered .stat-number { color: var(--yellow); }
+
+.toolbar {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.search {
+    flex: 1;
+    min-width: 210px;
+    height: 40px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 0 11px;
+    background: #fffdf9;
+    color: var(--ink);
+    outline: none;
+}
+
+.search:focus { border-color: var(--red); }
+
+select {
+    height: 40px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 0 10px;
+    background: #fffdf9;
+    color: var(--ink);
+}
+
+.table-wrap {
+    max-height: 560px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+    scrollbar-width: thin;
+    scrollbar-color: #a7adb8 #f1eee7;
+}
+
+.table-wrap::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+.table-wrap::-webkit-scrollbar-track {
+    background: #f1eee7;
+}
+
+.table-wrap::-webkit-scrollbar-thumb {
+    background: #a7adb8;
+    border-radius: 2px;
+}
+
+.table-wrap::-webkit-scrollbar-thumb:hover {
+    background: #747d8d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+}
+
+th {
+    color: var(--ink-soft);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .06em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--paper);
+    box-shadow: 0 1px 0 var(--rule);
+}
+
+td.question-text {
+    max-width: 520px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+tr.correct-row td:first-child {
+    border-left: 3px solid var(--green);
+}
+
+tr.wrong-row td:first-child {
+    border-left: 3px solid var(--red);
+}
+
+tr.unanswered-row td:first-child {
+    border-left: 3px solid var(--yellow);
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 7px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.badge.correct {
+    color: var(--green);
+    background: var(--green-light);
+}
+
+.badge.wrong {
+    color: var(--red);
+    background: var(--red-light);
+}
+
+.badge.unanswered {
+    color: var(--yellow);
+    background: var(--yellow-light);
+}
+
+.actions {
+    display: flex;
+    gap: 9px;
+    margin-top: 18px;
+}
+
+.empty {
+    text-align: center;
+    color: var(--ink-soft);
+    padding: 28px;
+}
+
+.hidden { display: none !important; }
+
+footer {
+    margin-top: 42px;
+    padding-top: 17px;
+    border-top: 1px solid var(--rule);
+    font: 11px monospace;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    .wrap {
+        padding: 35px 18px 30px;
+    }
+
+    .wrap::before { display: none; }
+
+    .content { margin-left: 0; }
+
+    .url-row { flex-direction: column; }
+
+    .results-head {
+        align-items: flex-start;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .score-circle {
+        width: 112px;
+        height: 112px;
+        flex-basis: 112px;
+    }
+
+    .score-percent { font-size: 30px; }
+
+    .candidate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .candidate-item {
+        border-right: none;
+    }
+
+    .table-wrap {
+        max-height: 500px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+.exam-header {
+    margin-bottom: 34px;
+}
+
+.exam-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.airforce-logo {
+    width: 62px;
+    height: 62px;
+    object-fit: contain;
+}
+
+.exam-title {
+    border-left: 2px solid var(--red);
+    padding-left: 14px;
+}
+
+.exam-name {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+.exam-subtitle {
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<div class="content">
+
+<header class="exam-header">
+
+    <div class="exam-brand">
+        <img
+            src="logo.png"
+            alt="Indian Air Force"
+            class="airforce-logo"
+        >
+
+        <div class="exam-title">
+            <div class="exam-name">
+                AFCAT 2 2026
+            </div>
+
+            <div class="exam-subtitle">
+                Air Force Common Admission Test
+            </div>
+        </div>
+    </div>
+
+    <div class="eyebrow">
+        Instant response-sheet grading
+    </div>
+
+    <h1>
+        Grade it <span class="stamp">in seconds.</span>
+    </h1>
+
+    <p class="sub">
+    Calculate your AFCAT 2 2026 score from your Digialm
+    response sheet. Get your correct, wrong and unanswered
+    questions, total marks and accuracy instantly.
+</p>
+
+</header>
+
+<section class="card">
+    <h2 class="section-title">Response sheet</h2>
+    <p class="hint">
+        No answer key required. The Digialm HTML already contains the selected
+        and correct options.
+    </p>
+
+    <div class="url-row">
+        <input
+            id="urlInput"
+            class="url-input"
+            type="url"
+            placeholder="https://cdn.digialm.com/.../response-sheet.html"
+            autocomplete="off"
+            spellcheck="false"
+        >
+        <button id="urlBtn" class="primary">Get result</button>
+    </div>
+
+    <div class="file-row">
+        <label class="file-label">
+            <input id="htmlFile" type="file" accept=".html,.htm">
+            <span>Upload HTML instead</span>
+        </label>
+        <span id="fileName" class="file-name">No file selected</span>
+    </div>
+
+    <div id="status" class="status"></div>
+</section>
+
+<section id="resultsCard" class="card hidden">
+
+    <div id="candidateCard" class="candidate-card hidden">
+        <div class="candidate-heading">Candidate Details</div>
+        <div id="candidateGrid" class="candidate-grid"></div>
+    </div>
+
+    <div class="results-head">
+        <div class="score-circle">
+            <div id="scorePercent" class="score-percent">0%</div>
+            <div id="scoreFraction" class="score-fraction">0 / 0</div>
+        </div>
+
+        <div id="scoreMeta" class="score-meta"></div>
+    </div>
+
+    <div class="stats">
+        <div class="stat correct">
+            <div id="correctCount" class="stat-number">0</div>
+            <div class="stat-label">Correct</div>
+        </div>
+
+        <div class="stat wrong">
+            <div id="wrongCount" class="stat-number">0</div>
+            <div class="stat-label">Wrong</div>
+        </div>
+
+        <div class="stat unanswered">
+            <div id="unansweredCount" class="stat-number">0</div>
+            <div class="stat-label">Unanswered</div>
+        </div>
+
+        <div class="stat">
+            <div id="totalCount" class="stat-number">0</div>
+            <div class="stat-label">Questions</div>
+        </div>
+    </div>
+
+    <div class="toolbar">
+        <input
+            id="searchInput"
+            class="search"
+            placeholder="Search questions..."
+        >
+
+        <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="correct">Correct</option>
+            <option value="wrong">Wrong</option>
+            <option value="unanswered">Unanswered</option>
+        </select>
+
+        <button id="exportBtn" class="secondary">Export CSV</button>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Q</th>
+                    <th>Question</th>
+                    <th>Chosen</th>
+                    <th>Correct</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+        </table>
+    </div>
+
+    <div class="actions">
+        <button id="resetBtn" class="secondary">
+            Analyze another sheet
+        </button>
+    </div>
+</section>
+
+<footer>
+    <span>This webpage has been made with ❤️. 2026</span>
+    <span>No data is stored or saved.</span>
+</footer>
+
+</div>
+</div>
+
+<script>
+let results = [];
+let selectedFile = null;
+
+const urlInput =
+    document.getElementById("urlInput");
+
+const urlBtn =
+    document.getElementById("urlBtn");
+
+const htmlFile =
+    document.getElementById("htmlFile");
+
+const fileName =
+    document.getElementById("fileName");
+
+const statusEl =
+    document.getElementById("status");
+
+const resultsCard =
+    document.getElementById("resultsCard");
+
+const resultsBody =
+    document.getElementById("resultsBody");
+
+const searchInput =
+    document.getElementById("searchInput");
+
+const filterSelect =
+    document.getElementById("filterSelect");
+
+
+/* =========================================================
+   URL
+========================================================= */
+
+urlBtn.addEventListener(
+    "click",
+    async () => {
+
+        const url =
+            urlInput.value.trim();
+
+        if (!url) {
+
+            showStatus(
+                "Paste a response-sheet URL first.",
+                "error"
+            );
+
+            return;
+        }
+
+        if (!isValidHttpUrl(url)) {
+
+            showStatus(
+                "Please enter a valid HTTP/HTTPS URL.",
+                "error"
+            );
+
+            return;
+        }
+
+        await loadFromUrl(url);
+    }
+);
+
+
+urlInput.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Enter"
+        ) {
+
+            urlBtn.click();
+
+        }
+    }
+);
+
+
+/* =========================================================
+   FILE
+========================================================= */
+
+htmlFile.addEventListener(
+    "change",
+    async () => {
+
+        const file =
+            htmlFile.files[0];
+
+        if (!file) {
+            return;
+        }
+
+        selectedFile =
+            file;
+
+        fileName.textContent =
+            file.name;
+
+        urlInput.value = "";
+
+        await analyzeFile(file);
+    }
+);
+
+
+/* =========================================================
+   FETCH URL
+========================================================= */
+
+async function loadFromUrl(url) {
+
+    setBusy(true);
+
+    showStatus(
+        "Fetching response sheet...",
+        "loading"
+    );
+
+    try {
+
+        /*
+         * Your Node.js backend fetches Digialm.
+         * Browser -> your server -> Digialm.
+         */
+
+        const response =
+            await fetch(
+                "/api/fetch-response-sheet?url=" +
+                encodeURIComponent(url),
+                {
+                    method: "GET",
+                    cache: "no-store"
+                }
+            );
+
+
+        let data;
+
+        try {
+
+            data =
+                await response.json();
+
+        } catch {
+
+            throw new Error(
+                `Server returned HTTP ${response.status}.`
+            );
+
+        }
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                data.error ||
+                `Server returned HTTP ${response.status}.`
+            );
+
+        }
+
+
+        if (
+            !data.html ||
+            !data.html.trim()
+        ) {
+
+            throw new Error(
+                "The response sheet returned empty HTML."
+            );
+
+        }
+
+
+        analyzeHTML(
+            data.html,
+            url
+        );
+
+
+    } catch (error) {
+
+        console.error(error);
+
+        showStatus(
+            error.message ||
+            "Could not fetch this response sheet.",
+            "error"
+        );
+
+    } finally {
+
+        setBusy(false);
+
+    }
+}
+
+
+/* =========================================================
+   FILE ANALYSIS
+========================================================= */
+
+async function analyzeFile(file) {
+
+    setBusy(true);
+
+    showStatus(
+        "Reading response sheet...",
+        "loading"
+    );
+
+    try {
+
+        const html =
+            await file.text();
+
+
+        if (
+            !html.trim()
+        ) {
+
+            throw new Error(
+                "The uploaded HTML file is empty."
+            );
+
+        }
+
+
+        analyzeHTML(
+            html,
+            file.name
+        );
+
+
+    } catch (error) {
+
+        console.error(error);
+
+        showStatus(
+            error.message ||
+            "Could not read the uploaded HTML.",
+            "error"
+        );
+
+    } finally {
+
+        setBusy(false);
+
+    }
+}
+
+
+/* =========================================================
+   THIS WAS THE MISSING FUNCTION
+========================================================= */
+
+function analyzeHTML(
+    html,
+    source
+) {
+
+    showStatus(
+        "Parsing Digialm response sheet...",
+        "loading"
+    );
+
+
+    /*
+     * Convert the HTML string into a DOM.
+     */
+
+    const parser =
+        new DOMParser();
+
+
+    const doc =
+        parser.parseFromString(
+            html,
+            "text/html"
+        );
+
+
+    /*
+     * Parse all questions.
+     */
+
+    results =
+        parseQuestions(doc);
+
+
+    if (
+        !results.length
+    ) {
+
+        throw new Error(
+            "No Digialm questions were detected. " +
+            "Make sure this is the original response-sheet HTML."
+        );
+
+    }
+
+
+    /*
+     * Parse candidate information.
+     */
+
+    const candidateInfo =
+        parseExamInfo(doc);
+
+
+    renderCandidateInfo(
+        candidateInfo
+    );
+
+
+    /*
+     * Calculate score.
+     *
+     * +3 correct
+     * -1 wrong
+     *  0 unanswered
+     */
+
+    calculateStats();
+
+
+    /*
+     * Render question table.
+     */
+
+    renderResults();
+
+
+    /*
+     * Show results.
+     */
+
+    resultsCard.classList.remove(
+        "hidden"
+    );
+
+
+    /*
+     * Success message.
+     */
+
+    showStatus(
+        `Successfully analyzed ${results.length} questions.`,
+        "success"
+    );
+
+
+    /*
+     * Scroll to results.
+     */
+
+    resultsCard.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+
+/* =========================================================
+   PARSE QUESTIONS
+========================================================= */
+
+function parseQuestions(doc) {
+
+    const panels =
+        doc.querySelectorAll(
+            ".question-pnl"
+        );
+
+
+    const questions = [];
+
+
+    panels.forEach(
+        (panel, index) => {
+
+            try {
+
+                const question =
+                    parseQuestion(
+                        panel,
+                        index
+                    );
+
+
+                if (question) {
+
+                    questions.push(
+                        question
+                    );
+
+                }
+
+            } catch (error) {
+
+                console.warn(
+                    `Could not parse question ${index + 1}`,
+                    error
+                );
+
+            }
+
+        }
+    );
+
+
+    return questions;
+}
+
+
+/* =========================================================
+   PARSE SINGLE QUESTION
+========================================================= */
+
+function parseQuestion(
+    panel,
+    index
+) {
+
+    let questionNumber =
+        null;
+
+
+    /*
+     * Find Q.1, Q.2, etc.
+     */
+
+    for (
+        const td of
+        panel.querySelectorAll("td")
+    ) {
+
+        const text =
+            td.textContent.trim();
+
+
+        const match =
+            text.match(
+                /^Q\.(\d+)$/
+            );
+
+
+        if (match) {
+
+            questionNumber =
+                Number(
+                    match[1]
+                );
+
+            break;
+
+        }
+
+    }
+
+
+    if (
+        questionNumber === null
+    ) {
+
+        return null;
+
+    }
+
+
+    /*
+     * Question text
+     */
+
+    const questionCell =
+        findQuestionCell(
+            panel
+        );
+
+
+    let questionText =
+        questionCell
+            ? questionCell.textContent
+            : "";
+
+
+    questionText =
+        cleanQuestionText(
+            questionText
+        );
+
+
+    /*
+     * Correct and wrong options
+     */
+
+    const correctElement =
+        panel.querySelector(
+            ".rightAns"
+        );
+
+
+    const wrongElements =
+        panel.querySelectorAll(
+            ".wrngAns"
+        );
+
+
+    const optionElements = [
+
+        ...(correctElement
+            ? [correctElement]
+            : []),
+
+        ...Array.from(
+            wrongElements
+        )
+
+    ];
+
+
+    const options = [];
+
+
+    for (
+        const element
+        of optionElements
+    ) {
+
+        const parsed =
+            parseOption(
+                element
+            );
+
+
+        if (parsed) {
+
+            options.push(
+                parsed
+            );
+
+        }
+
+    }
+
+
+    options.sort(
+        (a, b) =>
+            a.number -
+            b.number
+    );
+
+
+    /*
+     * Correct option number
+     */
+
+    let correctOption =
+        null;
+
+
+    if (
+        correctElement
+    ) {
+
+        const parsed =
+            parseOption(
+                correctElement
+            );
+
+
+        if (parsed) {
+
+            correctOption =
+                parsed.number;
+
+        }
+
+    }
+
+
+    /*
+     * Menu information
+     */
+
+    const menu =
+        panel.querySelector(
+            ".menu-tbl"
+        );
+
+
+    const menuText =
+        menu
+            ? menu.textContent
+            : "";
+
+
+    /*
+     * Chosen option
+     */
+
+    const chosenMatch =
+        menuText.match(
+            /Chosen\s+Option\s*:\s*(\d+)/i
+        );
+
+
+    const chosenOption =
+        chosenMatch
+            ? Number(
+                chosenMatch[1]
+            )
+            : null;
+
+
+    /*
+     * Status
+     */
+
+    const statusMatch =
+        menuText.match(
+            /Status\s*:\s*(.*?)(?:Chosen\s+Option|$)/i
+        );
+
+
+    const status =
+        statusMatch
+            ? statusMatch[1].trim()
+            : "";
+
+
+    /*
+     * Result
+     */
+
+    let result;
+
+
+    if (
+        chosenOption === null
+    ) {
+
+        result =
+            "unanswered";
+
+    } else if (
+        correctOption !== null &&
+        chosenOption === correctOption
+    ) {
+
+        result =
+            "correct";
+
+    } else {
+
+        result =
+            "wrong";
+
+    }
+
+
+    return {
+
+        question:
+            questionNumber,
+
+        questionText,
+
+        options,
+
+        chosen:
+            chosenOption,
+
+        correct:
+            correctOption,
+
+        result,
+
+        status
+
+    };
+}
+
+
+/* =========================================================
+   FIND QUESTION CELL
+========================================================= */
+
+function findQuestionCell(
+    panel
+) {
+
+    const table =
+        panel.querySelector(
+            ".questionRowTbl"
+        );
+
+
+    if (!table) {
+
+        return null;
+
+    }
+
+
+    const cells =
+        table.querySelectorAll(
+            "td"
+        );
+
+
+    for (
+        const cell of cells
+    ) {
+
+        const text =
+            cell.textContent.trim();
+
+
+        if (
+            !/^Q\.\d+$/.test(text) &&
+            cell.classList.contains(
+                "bold"
+            ) &&
+            !text.startsWith(
+                "Ans"
+            )
+        ) {
+
+            return cell;
+
+        }
+
+    }
+
+
+    const firstRow =
+        table.querySelector(
+            "tr"
+        );
+
+
+    if (firstRow) {
+
+        const cells =
+            firstRow.querySelectorAll(
+                ":scope > td"
+            );
+
+
+        if (
+            cells.length >= 2
+        ) {
+
+            return cells[1];
+
+        }
+
+    }
+
+
+    return null;
+}
+
+
+/* =========================================================
+   CLEAN QUESTION
+========================================================= */
+
+function cleanQuestionText(
+    text
+) {
+
+    return text
+
+        .replace(
+            /\s+/g,
+            " "
+        )
+
+        .replace(
+            /^\s*Q\.\d+\s*/,
+            ""
+        )
+
+        .trim();
+}
+
+
+/* =========================================================
+   PARSE OPTION
+========================================================= */
+
+function parseOption(
+    element
+) {
+
+    if (!element) {
+
+        return null;
+
+    }
+
+
+    const text =
+        element.textContent
+            .replace(
+                /\s+/g,
+                " "
+            )
+            .trim();
+
+
+    const match =
+        text.match(
+            /^(\d+)\.\s*(.*)$/s
+        );
+
+
+    if (!match) {
+
+        return null;
+
+    }
+
+
+    return {
+
+        number:
+            Number(
+                match[1]
+            ),
+
+        text:
+            match[2].trim(),
+
+        isCorrect:
+            element.classList.contains(
+                "rightAns"
+            )
+
+    };
+}
+
+
+/* =========================================================
+   PARSE CANDIDATE / EXAM INFO
+========================================================= */
+
+function parseExamInfo(
+    doc
+) {
+
+    const info = {};
+
+
+    const rows =
+        doc.querySelectorAll(
+            ".main-info-pnl tr"
+        );
+
+
+    rows.forEach(
+        row => {
+
+            const cells =
+                row.querySelectorAll(
+                    "td"
+                );
+
+
+            if (
+                cells.length < 2
+            ) {
+
+                return;
+
+            }
+
+
+            const key =
+                cells[0]
+                    .textContent
+                    .replace(
+                        /\s+/g,
+                        " "
+                    )
+                    .trim();
+
+
+            const value =
+                cells[1]
+                    .textContent
+                    .replace(
+                        /\s+/g,
+                        " "
+                    )
+                    .trim();
+
+
+            if (
+                key &&
+                value
+            ) {
+
+                info[key] =
+                    value;
+
+            }
+
+        }
+    );
+
+
+    /*
+     * Exam title
+     */
+
+    const title =
+        doc.querySelector(
+            ".main-info-pnl strong"
+        );
+
+
+    if (title) {
+
+        info["Exam"] =
+            title.textContent
+                .replace(
+                    /\s+/g,
+                    " "
+                )
+                .trim();
+
+    }
+
+
+    return info;
+}
+
+
+/* =========================================================
+   RENDER CANDIDATE INFO
+========================================================= */
+
+function renderCandidateInfo(
+    info
+) {
+
+    const candidateCard =
+        document.getElementById(
+            "candidateCard"
+        );
+
+
+    const candidateGrid =
+        document.getElementById(
+            "candidateGrid"
+        );
+
+
+    candidateGrid.innerHTML =
+        "";
+
+
+    const preferredOrder = [
+
+        "Candidate's Name",
+
+        "Application Number",
+
+        "Hall Ticket No",
+
+        "Test Center Name",
+
+        "Test Date",
+
+        "Test Time",
+
+        "Post Name",
+
+        "Exam"
+
+    ];
+
+
+    const keys = [];
+
+
+    preferredOrder.forEach(
+        key => {
+
+            if (
+                info[key] &&
+                !keys.includes(key)
+            ) {
+
+                keys.push(key);
+
+            }
+
+        }
+    );
+
+
+    /*
+     * Add any extra fields.
+     */
+
+    Object.keys(info).forEach(
+        key => {
+
+            if (
+                !keys.includes(key)
+            ) {
+
+                keys.push(key);
+
+            }
+
+        }
+    );
+
+
+    if (
+        !keys.length
+    ) {
+
+        candidateCard.classList.add(
+            "hidden"
+        );
+
+        return;
+
+    }
+
+
+    keys.forEach(
+        key => {
+
+            const item =
+                document.createElement(
+                    "div"
+                );
+
+
+            item.className =
+                "candidate-item";
+
+
+            item.innerHTML = `
+
+                <div class="candidate-label">
+                    ${escapeHTML(key)}
+                </div>
+
+                <div class="candidate-value">
+                    ${escapeHTML(info[key])}
+                </div>
+
+            `;
+
+
+            candidateGrid.appendChild(
+                item
+            );
+
+        }
+    );
+
+
+    candidateCard.classList.remove(
+        "hidden"
+    );
+}
+
+
+/* =========================================================
+   CALCULATE STATS
+========================================================= */
+
+function calculateStats() {
+
+    const total =
+        results.length;
+
+
+    const correct =
+        results.filter(
+            r =>
+                r.result ===
+                "correct"
+        ).length;
+
+
+    const wrong =
+        results.filter(
+            r =>
+                r.result ===
+                "wrong"
+        ).length;
+
+
+    const unanswered =
+        results.filter(
+            r =>
+                r.result ===
+                "unanswered"
+        ).length;
+
+
+    const attempted =
+        correct +
+        wrong;
+
+
+    /*
+     * Marking scheme:
+     *
+     * Correct    = +3
+     * Wrong      = -1
+     * Unanswered =  0
+     */
+
+    const score =
+        (correct * 3) -
+        wrong;
+
+
+    const maxMarks =
+        total * 3;
+
+
+    const scorePercentage =
+        maxMarks
+            ? (
+                score /
+                maxMarks *
+                100
+            ).toFixed(2)
+            : "0.00";
+
+
+    const accuracy =
+        attempted
+            ? (
+                correct /
+                attempted *
+                100
+            ).toFixed(2)
+            : "0.00";
+
+
+    document.getElementById(
+        "correctCount"
+    ).textContent =
+        correct;
+
+
+    document.getElementById(
+        "wrongCount"
+    ).textContent =
+        wrong;
+
+
+    document.getElementById(
+        "unansweredCount"
+    ).textContent =
+        unanswered;
+
+
+    document.getElementById(
+        "totalCount"
+    ).textContent =
+        total;
+
+
+    document.getElementById(
+        "scorePercent"
+    ).textContent =
+        scorePercentage +
+        "%";
+
+
+    document.getElementById(
+        "scoreFraction"
+    ).textContent =
+        `${score} / ${maxMarks}`;
+
+
+    document.getElementById(
+        "scoreMeta"
+    ).innerHTML = `
+
+        <strong>Score:</strong>
+        ${score} / ${maxMarks}
+
+        <br>
+
+        <strong>Accuracy:</strong>
+        ${accuracy}%
+
+        <br>
+
+        ${correct} correct × +3
+        &nbsp;·&nbsp;
+        ${wrong} wrong × −1
+        &nbsp;·&nbsp;
+        ${unanswered} unanswered × 0
+
+    `;
+}
+
+
+/* =========================================================
+   RENDER RESULTS
+========================================================= */
+
+function renderResults() {
+
+    const search =
+        searchInput.value
+            .trim()
+            .toLowerCase();
+
+
+    const filter =
+        filterSelect.value;
+
+
+    resultsBody.innerHTML =
+        "";
+
+
+    const filtered =
+        results.filter(
+            r => {
+
+                if (
+                    filter !== "all" &&
+                    r.result !== filter
+                ) {
+
+                    return false;
+
+                }
+
+
+                if (!search) {
+
+                    return true;
+
+                }
+
+
+                return (
+
+                    String(
+                        r.question
+                    )
+                        .includes(
+                            search
+                        )
+
+                    ||
+
+                    r.questionText
+                        .toLowerCase()
+                        .includes(
+                            search
+                        )
+
+                );
+
+            }
+        );
+
+
+    if (
+        !filtered.length
+    ) {
+
+        resultsBody.innerHTML = `
+
+            <tr>
+
+                <td
+                    colspan="5"
+                    class="empty"
+                >
+                    No questions found.
+                </td>
+
+            </tr>
+
+        `;
+
+        return;
+
+    }
+
+
+    filtered.forEach(
+        r => {
+
+            const tr =
+                document.createElement(
+                    "tr"
+                );
+
+
+            tr.className =
+                r.result ===
+                "correct"
+
+                    ? "correct-row"
+
+                    : r.result ===
+                      "wrong"
+
+                        ? "wrong-row"
+
+                        : "unanswered-row";
+
+
+            let badge;
+
+
+            if (
+                r.result ===
+                "correct"
+            ) {
+
+                badge = `
+
+                    <span class="badge correct">
+                        ✓ Correct
+                    </span>
+
+                `;
+
+            } else if (
+                r.result ===
+                "wrong"
+            ) {
+
+                badge = `
+
+                    <span class="badge wrong">
+                        ✗ Wrong
+                    </span>
+
+                `;
+
+            } else {
+
+                badge = `
+
+                    <span class="badge unanswered">
+                        — Unanswered
+                    </span>
+
+                `;
+
+            }
+
+
+            tr.innerHTML = `
+
+                <td>
+                    <strong>
+                        Q.${r.question}
+                    </strong>
+                </td>
+
+                <td class="question-text">
+                    ${escapeHTML(
+                        r.questionText
+                    )}
+                </td>
+
+                <td>
+                    ${
+                        r.chosen === null
+                            ? "—"
+                            : "Option " +
+                              r.chosen
+                    }
+                </td>
+
+                <td>
+                    ${
+                        r.correct === null
+                            ? "—"
+                            : "Option " +
+                              r.correct
+                    }
+                </td>
+
+                <td>
+                    ${badge}
+                </td>
+
+            `;
+
+
+            resultsBody.appendChild(
+                tr
+            );
+
+        }
+    );
+}
+
+
+/* =========================================================
+   SEARCH / FILTER
+========================================================= */
+
+searchInput.addEventListener(
+    "input",
+    renderResults
+);
+
+
+filterSelect.addEventListener(
+    "change",
+    renderResults
+);
+
+
+/* =========================================================
+   EXPORT CSV
+========================================================= */
+
+document.getElementById(
+    "exportBtn"
+)
+.addEventListener(
+    "click",
+    exportCSV
+);
+
+
+function exportCSV() {
+
+    if (
+        !results.length
+    ) {
+
+        return;
+
+    }
+
+
+    const header = [
+
+        "Question",
+
+        "Question Text",
+
+        "Chosen Option",
+
+        "Correct Option",
+
+        "Result"
+
+    ];
+
+
+    const lines = [
+
+        header
+            .map(
+                csvEscape
+            )
+            .join(",")
+
+    ];
+
+
+    results.forEach(
+        r => {
+
+            lines.push(
+
+                [
+
+                    r.question,
+
+                    r.questionText,
+
+                    r.chosen ?? "",
+
+                    r.correct ?? "",
+
+                    r.result
+
+                ]
+
+                .map(
+                    csvEscape
+                )
+
+                .join(",")
+
+            );
+
+        }
+    );
+
+
+    const blob =
+        new Blob(
+            [
+                lines.join("\n")
+            ],
+            {
+                type:
+                    "text/csv;charset=utf-8"
+            }
+        );
+
+
+    const url =
+        URL.createObjectURL(
+            blob
+        );
+
+
+    const a =
+        document.createElement(
+            "a"
+        );
+
+
+    a.href =
+        url;
+
+
+    a.download =
+        "red-pen-results.csv";
+
+
+    document.body.appendChild(
+        a
+    );
+
+
+    a.click();
+
+
+    a.remove();
+
+
+    URL.revokeObjectURL(
+        url
+    );
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+document.getElementById(
+    "resetBtn"
+)
+.addEventListener(
+    "click",
+    reset
+);
+
+
+function reset() {
+
+    results = [];
+
+    selectedFile = null;
+
+
+    urlInput.value = "";
+
+    htmlFile.value = "";
+
+    fileName.textContent =
+        "No file selected";
+
+
+    resultsCard.classList.add(
+        "hidden"
+    );
+
+
+    document.getElementById(
+        "candidateCard"
+    )
+    .classList.add(
+        "hidden"
+    );
+
+
+    document.getElementById(
+        "candidateGrid"
+    ).innerHTML = "";
+
+
+    searchInput.value = "";
+
+    filterSelect.value =
+        "all";
+
+
+    resultsBody.innerHTML =
+        "";
+
+
+    showStatus(
+        "",
+        ""
+    );
+}
+
+
+/* =========================================================
+   HELPERS
+========================================================= */
+
+function setBusy(
+    busy
+) {
+
+    urlBtn.disabled =
+        busy;
+
+}
+
+
+function showStatus(
+    message,
+    type
+) {
+
+    statusEl.textContent =
+        message;
+
+
+    statusEl.className =
+        "status" +
+        (
+            type
+                ? " " + type
+                : ""
+        );
+
+}
+
+
+function isValidHttpUrl(
+    value
+) {
+
+    try {
+
+        const url =
+            new URL(value);
+
+
+        return (
+            url.protocol ===
+                "http:" ||
+
+            url.protocol ===
+                "https:"
+        );
+
+    } catch {
+
+        return false;
+
+    }
+}
+
+
+function csvEscape(
+    value
+) {
+
+    const str =
+        String(
+            value ?? ""
+        );
+
+
+    if (
+        str.includes(",") ||
+        str.includes('"') ||
+        str.includes("\n")
+    ) {
+
+        return (
+            '"' +
+            str.replace(
+                /"/g,
+                '""'
+            ) +
+            '"'
+        );
+
+    }
+
+
+    return str;
+}
+
+
+function escapeHTML(
+    value
+) {
+
+    return String(
+        value ?? ""
+    )
+
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+
+        .replace(
+            /</g,
+            "&lt;"
+        )
+
+        .replace(
+            />/g,
+            "&gt;"
+        )
+
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+
+        .replace(
+            /'/g,
+            "&#039;"
+        );
+}
+</script>
+
+</body>
+</html>
